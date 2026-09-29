@@ -418,7 +418,39 @@
       document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
       document.getElementById('page-' + section).classList.add('active');
       window.scrollTo(0, 0);
+      history.pushState({page: section}, '', '#' + section);
     }
+
+    // Manejar botón atrás del navegador
+    window.addEventListener('popstate', function(e) {
+      if (e.state && e.state.page) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById('page-' + e.state.page).classList.add('active');
+        window.scrollTo(0, 0);
+      } else {
+        // Si no hay estado, volver al inicio
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById('page-inicio').classList.add('active');
+        window.scrollTo(0, 0);
+      }
+    });
+
+    // Cargar estado inicial desde URL
+    window.addEventListener('DOMContentLoaded', function() {
+      var hash = window.location.hash.slice(1);
+      if (hash && document.getElementById('page-' + hash)) {
+        show(hash);
+        history.replaceState({page: hash}, '', '#' + hash);
+      }
+    });
+
+    // Prevenir navegación en botones "volver"
+    document.querySelectorAll('.back-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        show('inicio');
+      });
+    });
   </script>
 </body>
 </html>
