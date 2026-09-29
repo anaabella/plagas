@@ -3,87 +3,462 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guía de Plagas del Huerto</title>
+  <title>Manejo integral de plagas 🌿 Ana y Clau</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>PLAGAS</h1>
-    <p>Identificación, prevención y manejo integral</p>
-  </header>
-
-  <div class="main-card">
-
-    <div class="pest-grid">
-
-      <a href="pulgones.html" class="pest-card">
-        <div class="pest-card-icon icon-pulgones">
-          <img src="img/pulgones.png" alt="Pulgones">
+  <!-- ==================== INICIO ==================== -->
+  <div id="page-inicio" class="page active">
+    <header>
+      <div class="header-tag">Huerto Urbano</div>
+      <h1>PLAGAS</h1>
+      <p>Identificación, prevención y manejo integrado</p>
+    </header>
+    <div class="main-card">
+      <div class="pest-grid">
+        <div class="pest-card" onclick="show('pulgones')">
+          <div class="pest-card-icon icon-pulgones">
+            <img src="img/pulgones.png" alt="Pulgones">
+          </div>
+          <h3>Pulgones</h3>
+          <p>Insectos pequeños que succionan savia</p>
         </div>
-        <h3>Pulgones</h3>
-        <p>Insectos pequeños que succionan savia</p>
-      </a>
-
-      <a href="orugas.html" class="pest-card">
-        <div class="pest-card-icon icon-orugas">
-          <img src="img/orugas.png" alt="Orugas">
+        <div class="pest-card" onclick="show('orugas')">
+          <div class="pest-card-icon icon-orugas">
+            <img src="img/orugas.png" alt="Orugas">
+          </div>
+          <h3>Orugas</h3>
+          <p>Larvas que causan agujeros en hojas y frutos</p>
         </div>
-        <h3>Orugas</h3>
-        <p>Larvas que causan agujeros en hojas y frutos</p>
-      </a>
-
-      <a href="minador.html" class="pest-card">
-        <div class="pest-card-icon icon-minador">
-          <img src="img/minador.png" alt="Minador">
+        <div class="pest-card" onclick="show('minador')">
+          <div class="pest-card-icon icon-minador">
+            <img src="img/minador.png" alt="Minador">
+          </div>
+          <h3>Minador</h3>
+          <p>Larvas que barrenan el interior de tallos</p>
         </div>
-        <h3>Minador</h3>
-        <p>Larvas que barrenan el interior de tallos</p>
-      </a>
-
-      <a href="trips.html" class="pest-card">
-        <div class="pest-card-icon icon-trips">
-          <img src="img/trips.png" alt="Trips">
+        <div class="pest-card" onclick="show('trips')">
+          <div class="pest-card-icon icon-trips">
+            <img src="img/trips.png" alt="Trips">
+          </div>
+          <h3>Trips</h3>
+          <p>Insectos diminutos que causan manchas plateadas</p>
         </div>
-        <h3>Trips</h3>
-        <p>Insectos diminutos que causan manchas plateadas</p>
-      </a>
-
-      <a href="mosca.html" class="pest-card">
-        <div class="pest-card-icon icon-mosca">
-          <img src="img/mosca de fruto.png" alt="Mosca de los frutos">
+        <div class="pest-card" onclick="show('mosca')">
+          <div class="pest-card-icon icon-mosca">
+            <img src="img/mosca de fruto.png" alt="Mosca de los frutos">
+          </div>
+          <h3>Mosca Fruto</h3>
+          <p>Ovipositan en frutos causando pudrición</p>
         </div>
-        <h3>Mosca Fruto</h3>
-        <p>Ovipositan en frutos causando pudrición</p>
-      </a>
-
-      <a href="bacterias.html" class="pest-card">
-        <div class="pest-card-icon icon-bacterias">
-          <img src="img/bacteria.png" alt="Bacterias">
+        <div class="pest-card" onclick="show('bacterias')">
+          <div class="pest-card-icon icon-bacterias">
+            <img src="img/bacteria.png" alt="Bacterias">
+          </div>
+          <h3>Bacterias</h3>
+          <p>Microorganismos que causan chancros y marchitamiento</p>
         </div>
-        <h3>Bacterias</h3>
-        <p>Microorganismos que causan chancros y marchitamiento</p>
-      </a>
-
-      <a href="hongos.html" class="pest-card">
-        <div class="pest-card-icon icon-hongos">
-          <img src="img/hongo.png" alt="Hongos">
+        <div class="pest-card" onclick="show('hongos')">
+          <div class="pest-card-icon icon-hongos">
+            <img src="img/hongo.png" alt="Hongos">
+          </div>
+          <h3>Hongos</h3>
+          <p>Oídio, Mildiu, Botrytis y pudrición</p>
         </div>
-        <h3>Hongos</h3>
-        <p>Oídio, Mildiu, Botrytis y pudrición</p>
-      </a>
-
+      </div>
+      <div class="terratip">
+        <span class="terratip-icon">🌿</span>
+        <p class="terratip-text"><strong>Consejo:</strong> El manejo integrado de plagas combina métodos biológicos, culturales y químicos para un control eficiente y sustentable.</p>
+      </div>
     </div>
-
-    <div class="terratip">
-      <span class="terratip-icon">🌿</span>
-      <p class="terratip-text">El manejo integral de plagas combina métodos biológicos, culturales y químicos para un control eficiente y sustentable.</p>
-    </div>
-
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
   </div>
 
-  <footer>
-    <p>Manejo integral de plagas 🌿 Ana y Clau</p>
-  </footer>
+  <!-- ==================== PULGONES ==================== -->
+  <div id="page-pulgones" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>PULGONES</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #d4e8c2 0%, transparent 60%);">
+      <img src="img/pulgones.png" alt="Ilustración de pulgones">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Pulgones</h1>
+        <p class="detail-subtitle">Aphididae</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Insectos pequeños blancos, negros, verdes o amarillos que succionan savia.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Insectos pequeños de cuerpo blando, frecuentemente coloniales. Se encuentran en diversas especies y colores. Se reproducen rápidamente y se alimentan succionando la savia de las plantas mediante sus piezas bucales tipo pico.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Tallos, brotes tiernos y envés de las hojas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Encrespamiento de hojas, melaza pegajosa, presencia de negrilla (hongo que crece sobre la melaza) y hormigas que acuden a alimentarse de la sustancia azucarada.</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 1.png" alt="Daño foliar por pulgones">
+            <p>Encrespamiento de hojas por alimentación de pulgones</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Chorro de agua a presión para removerlos; poda de brotes infestados.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Evitar el exceso de fertilizantes nitrogenados; buena ventilación entre plantas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>Aplicación de APICHI (efecto repelente e insecticida) o extracto de aguaribay; favorecer depredadores naturales como mariquitas y crisopas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Jabón potásico, aceite de neem o piretroides.</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <!-- ==================== ORUGAS ==================== -->
+  <div id="page-orugas" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>ORUGAS Y LARVAS</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #f0dca0 0%, transparent 60%);">
+      <img src="img/orugas.png" alt="Ilustración de orugas">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Orugas y Larvas</h1>
+        <p class="detail-subtitle">Larvas de lepidópteros (mariposas y polillas)</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Larvas de lepidópteros (mariposas/polillas) de diversos tamaños, con cuerpos segmentados y patas falsas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Larvas de lepidópteros de diversos tamaños. Son herbívoras voraces que se alimentan de tejidos vegetales, pasando por varias etapas de crecimiento (instars) antes de pupar.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Hojas, frutos, flores y tallos.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Mordeduras o agujeros grandes en hojas y frutos, excrementos oscuros (frass) visibles sobre las plantas.</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 2.png" alt="Daño foliar por orugas">
+            <p>Agujeros grandes provocados por la alimentación de orugas</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Recolección manual directa; uso de trampas de luz o feromonas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Rotación de cultivos; eliminación de restos de cosechas anteriores.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>APICHI (actúa como repelente de adultos/oviposición e irritante) o Bacillus thuringiensis (BT).</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Insecticidas selectivos para larvas.</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <!-- ==================== MINADOR ==================== -->
+  <div id="page-minador" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>MINADOR DE TALLOS</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #d8c8e8 0%, transparent 60%);">
+      <img src="img/minador.png" alt="Ilustración de minador">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Minador de Tallos</h1>
+        <p class="detail-subtitle">Larvas de dípteros o coleópteros</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Larvas de dípteros o coleópteros que barrenan e introducen galerías en el interior de los tallos.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Larvas de dípteros (moscas) o coleópteros (escarabajos) que se introducen en el tejido vegetal, creando galerías o túneles mientras se alimentan. Su presencia es difícil de detectar externamente hasta que los daños son severos.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Interior de los tallos y ramas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Agujeros de entrada en el tallo, marchitamiento de brotes, serrín visible (excrementos de larvas).</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 2.png" alt="Daño foliar por minador">
+            <p>Galerías serpenteantes visibles en el tejido foliar</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Poda y destrucción de los tallos o ramas afectadas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Utilizar variedades resistentes; eliminar hierbas adventicias hospedantes.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>Aplicación preventiva de extracto de aguaribay o APICHI (para evitar la postura de huevos en la superficie).</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Insecticidas sistémicos (solo en fases iniciales).</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <!-- ==================== TRIPS ==================== -->
+  <div id="page-trips" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>TRIPS</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #f5dcc8 0%, transparent 60%);">
+      <img src="img/trips.png" alt="Ilustración de trips">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Trips</h1>
+        <p class="detail-subtitle">Thysanoptera</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Insectos diminutos y alargados (1-2 mm), de color gris, amarillo o marrón, con alas fimbriadas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Insectos diminutos y alargados (1-2 mm), de color gris, amarillo o marrón. Poseen alas con flecos de cerdas. Se alimentan raspando la superficie de los tejidos y succionando el contenido celular.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Flores, envés de las hojas y frutos jóvenes.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Manchas plateadas/grises en las hojas con puntos negros (excrementos), deformación de tejidos.</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 2.png" alt="Daño foliar por trips">
+            <p>Manchas plateadas y necrosis por alimentación de trips</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Colocación de trampas cromotrópicas azules.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Eliminación de malas hierbas y restos vegetales alrededor del cultivo.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>APICHI y extracto de aguaribay (por su efecto insecticida/repelente); depredadores como Orius o ácaros.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Jabón potásico con aceite de neem o químicos autorizados.</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <!-- ==================== MOSCA ==================== -->
+  <div id="page-mosca" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>MOSCA DE LOS FRUTOS</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #f0c8c0 0%, transparent 60%);">
+      <img src="img/mosca de fruto.png" alt="Ilustración de mosca de los frutos">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Mosca de los Frutos</h1>
+        <p class="detail-subtitle">Ceratitis capitata</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Dípteros de tamaño mediano con alas patronadas que ovipositan en el fruto.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Dípteros de tamaño mediano con alas patronadas (con bandas o manchas). Las hembras depositan sus huevos dentro del fruto mediante un ovipositor, donde las larvas se alimentan de la pulpa.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Frutos en proceso de maduración.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Picaduras visibles en la piel del fruto, pudrición interna y caída prematura.</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 1.png" alt="Daño en fruto por mosca">
+            <p>Picaduras de oviposición y pudrición interna del fruto</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Trampas cromotrópicas amarillas o trampas de mosquero con atrayentes.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Recoger y destruir frutos caídos o infectados; embolsado de frutos.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>APICHI o extracto de aguaribay pulverizado perimetralmente como repelente alimentario/de oviposición.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Cebos alimenticios envenenados o pulverizaciones dirigidas.</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <!-- ==================== BACTERIAS ==================== -->
+  <div id="page-bacterias" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>BACTERIAS</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #c8e0c8 0%, transparent 60%);">
+      <img src="img/bacteria.png" alt="Ilustración de bacterias">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Bacterias</h1>
+        <p class="detail-subtitle">Proteobacteria / Firmicutes fitopatógenos</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Microorganismos procariotas patógenos (Pseudomonas, Xanthomonas, etc.) que infectan tejidos vegetales.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Microorganismos procariotas patógenos como Pseudomonas, Xanthomonas y Erwinia. Se multiplican rápidamente en condiciones de alta humedad y temperaturas cálidas, colonizando el sistema vascular o tejidos superficiales.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Sistema vascular, estomas o heridas en tejidos vegetales.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Chancros, marchitamiento rápido, manchas acuosas en hojas, exudados bacterianos.</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 2.png" alt="Daño foliar por bacterias">
+            <p>Manchas necróticas y exudados causados por bacterias</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Eliminación y quema/desecho de plantas o partes severamente infectadas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Desinfección estricta de herramientas de poda; evitar el riego por aspersión.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>Biopreparados con cola de caballo (refuerza la pared celular) combinados con Bacillus subtilis.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Tratamientos cúpricos (cobre) de carácter preventivo.</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <!-- ==================== HONGOS ==================== -->
+  <div id="page-hongos" class="page">
+    <header style="position:relative;">
+      <a class="back-btn" onclick="show('inicio')">← Volver</a>
+      <h1>HONGOS</h1>
+    </header>
+    <div class="detail-hero" style="background: radial-gradient(circle at 50% 60%, #d8c8d8 0%, transparent 60%);">
+      <img src="img/hongo.png" alt="Ilustración de hongos">
+    </div>
+    <div class="detail-content">
+      <div class="detail-main-card">
+        <h1 class="detail-title">Hongos</h1>
+        <p class="detail-subtitle">Ascomycota / Basidiomycota fitopatógenos</p>
+        <div class="info-section">
+          <h2><span class="icon">🔍</span> Identificación</h2>
+          <p>Organismos fitopatógenos como Oídio, Mildiu, Botrytis, Fusarium, entre otros.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">📋</span> Descripción</h2>
+          <p>Organismos fitopatógenos que incluyen Oídio, Mildiu, Botrytis, Fusarium y muchas otras especies. Se propagan mediante esporas y prosperan en condiciones de alta humedad, temperatura moderada y falta de ventilación.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🏡</span> Hábitat</h2>
+          <p>Hojas, tallos, raíces y frutos (especialmente con alta humedad).</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚠️</span> Signos y Síntomas</h2>
+          <p>Polvo blanco/gris, manchas foliares, pudrición de raíces o cuello, moho visible.</p>
+          <div class="detail-leaf-damage">
+            <img src="img/especimen 2.png" alt="Daño foliar por hongos">
+            <p>Manchas y pudrición causadas por hongos fitopatógenos</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🔧</span> Manejo Mecánico</h2>
+          <p>Poda de partes afectadas; mejora de la circulación de aire entre plantas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🌱</span> Manejo Cultural</h2>
+          <p>Evitar el encharcamiento; regar en la base sin mojar el follaje; distanciar plantas.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">🐞</span> Manejo Biológico / Biopreparados</h2>
+          <p>Decocción de cola de caballo (fungicida rico en sílice que fortalece la cutícula) o Trichoderma spp.</p>
+        </div>
+        <div class="info-section">
+          <h2><span class="icon">⚗️</span> Manejo Químico</h2>
+          <p>Fungicidas preventivos o curativos (cobre, azufre o sistémicos).</p>
+        </div>
+      </div>
+    </div>
+    <footer><p>Manejo integral de plagas 🌿 Ana y Clau</p></footer>
+  </div>
+
+  <script>
+    function show(section) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + section).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 </html>
